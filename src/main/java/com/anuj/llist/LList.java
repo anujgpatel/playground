@@ -17,7 +17,10 @@ public class LList {
     Node head;
     
     public LList(){}
-    
+    /***
+     * 
+     * @param val - Add val to List
+     */
     public void add(int val){ 
         if(head==null)
             head = new Node(val);
@@ -29,9 +32,12 @@ public class LList {
             temp.next = new Node(val);        
         }
     }
-    
+    /**
+     * 
+     * @param val - Check if partners for val exist in this list
+     * @return true if partners exist, else false 
+     */
     public boolean hasPartners(int val){
-        //Map map = new HashMap<Integer, Integer>();
         List list = new ArrayList<Integer>();
         Node temp = head;
         while(temp.next!=null){//0,1,2,3,4,5
@@ -57,7 +63,7 @@ public class LList {
         if(head!=null){
             Node temp = head;
             while(temp.next!=null){
-                strBuilder.append(temp.val + "->");
+                strBuilder.append(temp.val).append("->");
                 temp = temp.next;
             }
             strBuilder.append(temp.val);
