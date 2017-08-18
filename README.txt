@@ -16,3 +16,10 @@ false
 
 
 You will get BAD_REQUEST (400) response code if an invalid list is passed in POST body.  
+
+
+Implementation
+--------------
+While we could have implemented this in many ways, with this project we create a custom linked list object and add numbers that were passed in as comma separated values to that custom Linked list object (https://github.com/anujgpatel/playground/blob/master/src/main/java/com/anuj/llist/LList.java).
+We then traverse through the generated list to see if the LinkedList contains the partners for given number.  
+Rest resource (https://github.com/anujgpatel/playground/blob/master/src/main/java/com/anuj/rest/resources/ListResource.java) supports GET & POST on http://<server>:<port>/lp/list URL. 
