@@ -19,7 +19,7 @@ public class LList {
     public LList(){}
     /***
      * 
-     * @param val - Add val to List
+     * @param val - Add @val to List
      */
     public void add(int val){ 
         if(head==null)
@@ -34,7 +34,7 @@ public class LList {
     }
     /**
      * 
-     * @param val - Check if partners for val exist in this list
+     * @param val - Check if partners for @val exist in this list
      * @return true if partners exist, else false 
      */
     public boolean hasPartners(int val){
