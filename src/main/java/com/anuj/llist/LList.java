@@ -38,6 +38,8 @@ public class LList {
      * @return true if partners exist, else false 
      */
     public boolean hasPartners(int val){
+        if(head==null)
+            return false;
         List list = new ArrayList<Integer>();
         Node temp = head;
         while(temp.next!=null){//0,1,2,3,4,5
@@ -80,12 +82,12 @@ public class LList {
     
     public static void main(String[] args){
         LList list = new LList();
-        list.add(0);
+        /*list.add(0);
         list.add(-11);
         list.add(20);
         list.add(31);
         list.add(9);
-        list.add(5);
+        list.add(5);*/
         System.out.println("Partners for 5 = "+list.hasPartners(5));
         System.out.println("Partners for 99 = "+list.hasPartners(99));     
         System.out.println("Partners for 9 = "+list.hasPartners(9));
